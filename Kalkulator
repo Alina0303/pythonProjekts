@@ -1,0 +1,23 @@
+while True:
+    a = int(input('podaj liczbe1:'))
+    b = int(input('podaj liczbe2:'))
+    c = input('podaj znak:')
+    if c =='+':
+        print('suma:'+str(a+b))
+    elif c == '-':
+        print('odejmowanie:'+str(a-b))
+    elif c == '*':
+        print('mnozenie:'+str(a*b))
+    elif c == '/':
+        try:
+            print('dzielenie:'+str(a/b))
+        except:
+            print('nie mozna dielicz na 0')
+            continue
+    elif c == '%':
+        print('modul:'+str(a%b))
+    elif c == '**':
+        print('potegowanie:'+str(a**b))
+    d = input('wprowadz x zeby zakonczuc program')
+    if d == 'x':
+        break
